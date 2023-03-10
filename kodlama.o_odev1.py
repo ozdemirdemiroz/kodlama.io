@@ -23,11 +23,11 @@ g={'elma','armut','muz'}
 
 temp=35.5
 if temp>24:
-    print(f"oda sıcaklığı {temp} C , ısıtıcı açılacak")
+    print(f"oda sıcaklığı {temp} C , ısıtıcı kapanacak")
 
 elif temp<21:
 
-    print(f"oda sıcaklığı {temp} C, ısıtıcı kapanacak")
+    print(f"oda sıcaklığı {temp} C, ısıtıcı açılacak")
 
 else:
 
