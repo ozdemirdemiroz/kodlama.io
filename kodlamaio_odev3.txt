@@ -1,0 +1,31 @@
+
+HTML - Hypertext Markup Language
+web sayfalarını oluştururken kullanılan bir işaretleme dilidir. Sayfanın içeriğini tanımlamak için  tag ve attributes ler kulanılır. sayfanın temel yapısını oluşturur. sayfadaki metinlerin resimlerin , tabloların veya diğer objelerin tanımlanması ve bu objelerin sayfada nerede hangi düzende duracağı belirlenir. son sürümü html5 dir.
+etiketler < ve > işaretleri ile çevrelenir . mesela :
+<p> paragrafı belirtirken  , <img> resmin sayfada görüntülenmesini sağlar . 
+sayfanın biçimlendirilmesi için stil özellikleride içerebilir, CSS teknolojisi kullanılarak sayfalar daha düzenli ve güzel hale getirilebilir.
+
+HTML Locators
+web sayfasındaki öğeleri ve nesneleri bulmak ve bunlarla etkileşime girmek için kullanılan yöntemdir . bir kodlama dilninde , web sitesindeki öğeyi bulmak ve tanımak için benzersiz olan bazı HTML locators ları kullanmak iyi olur.
+ID - sayfadaki öğenin benzersiz kimliğidir , her bir öğe için bir ke kullanılabilr
+XPATH - sayfadaki öğenin , HTML kodu içerisindeki yolunu gösteirir.  
+Full XPATH- XPATH gibi yolu gösteriri ama tam yolu kullanır .
+
+Selenium'da aksiyonlar
+webdriver danımladıktan sonra :
+1.	Web Sayfası Açma: driver.get(), belirtilen URL'ye tarayıcıda bir sayfa açar.
+2.	Web Sayfası Gezinme: driver.forward(), driver.back(), tarayıcı geçmişinde bir sayfa geri veya ileri gitmek için kullanılır.
+3.	Eleman Bulma: driver.find_element_by_*(), bir web sayfasındaki belirli bir öğeyi bulmak için kullanılır. Örnek olarak, driver.find_element_by_id(), driver.find_element_by_name(), driver.find_element_by_xpath(), driver.find_element_by_class_name() gibi.
+4.	Elemanlar Listesi Bulma: driver.find_elements_by_*(), belirli bir özellikle eşleşen tüm öğeleri liste olarak döndürür. Örnek olarak, driver.find_elements_by_tag_name(), driver.find_elements_by_class_name() gibi.
+5.	Eleman Etkileşimi: click(), send_keys(), clear(), submit(), vb. elemanlarla etkileşime geçmek için kullanılır.
+        * click() , tıklar
+        * send_keys(),istenilen tuşları gönderir
+        * clear() elemanın içeriğini temizler
+        * submit() form göndermek için kullanılır , veriler toplanır ve formun action özelliğine göre bir istek gönderir
+
+6.	Sayfa Ayarları Değiştirme: driver.maximize_window(), tarayıcı penceresini tam ekran yapar. driver.set_window_size() belirtilen boyutta bir tarayıcı penceresi açar.
+7.	Tarayıcı İçinde Yeni Sekme Açma: driver.switch_to.window(), yeni bir tarayıcı sekmesi açmak için kullanılır.
+8.	Çerçeve Geçişi: driver.switch_to.frame(), sayfadaki bir çerçeveye geçiş yapmak için kullanılır.
+9.	Tarayıcı Kapatma: driver.close(), açık olan tarayıcı penceresini kapatır. driver.quit(), tüm tarayıcı pencerelerini kapatır ve tarayıcıyı sonlandırır.
+
+
